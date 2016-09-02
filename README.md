@@ -37,7 +37,16 @@ Example:
     </ion-slide-box>
 </ion-content>
 ```
-
+In addition to,based on some businesses,in order to achieve scroll of the content,but the slides-tabs are fixed in the top, so we can do that
+```html
+<ion-content scroll="false">
+    <ion-slide-box show-pager="false" ion-slide-tabs>
+        <ion-slide ion-slide-tab-label="test"><ion-content scroll="true">Tab 1</ion-content></ion-slide>
+        <ion-slide ion-slide-tab-label="secondTest"><ion-content scroll="true">Tab 2</ion-content></ion-slide>
+        <ion-slide ion-slide-tab-label="<b>boldTest</b>"><ion-content scroll="true">Tab 3</ion-content></ion-slide>
+    </ion-slide-box>
+</ion-content>
+```
 ## API
 Currently there ist only one attribute to change the behaviour of the tabs:
 
